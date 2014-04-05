@@ -34,6 +34,18 @@ to your `_config.yml`; or, for a single page, by adding something like
     
 near the top of a page. (No, coderay is _not_ being used, but that was the easiest hack I could find to get the value of the option into Kramdown.)
 
+
+Github flavor markdown syntax is also supported by adding 
+
+    kramdown:
+      input: GFM
+
+to your `_config.yml`. For example GFM code
+    
+    ```ruby
+    print "Hello World"
+    ```
+
 ## Tested with
 
 * ruby 2.0.0p247
