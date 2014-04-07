@@ -59,6 +59,7 @@ module Jekyll
           :toc_levels           => @config['kramdown']['toc_levels'],
           :smart_quotes         => @config['kramdown']['smart_quotes'],
           :coderay_default_lang => @config['kramdown']['default_lang'],
+          :input                => @config['kramdown']['input']
       }).to_pygs
       return Typogruby.improve(html)
     end
