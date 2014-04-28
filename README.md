@@ -7,11 +7,13 @@ If you want to know, read why it is such a good idea to [use Kramdown with Pygme
 
 ## Usage
 
-Add `krampygs.rb` to your `_plugins` directory, and the following bogus Markdown extension
+Add `krampygs.rb` to your `_plugins` directory, and the following lines
 
     markdown_ext: foo
+    markdown: kramdown
+    pygments: true
     
-to your `_config.yml`. This is a workaround to get Jekyll ignore its own Markdown converters and use instead the custom converter provided (which explicitly looks for `.md` files).
+to your `_config.yml`. The bogus `foo` extension is a workaround to get Jekyll ignore its own Markdown converters and use instead the custom converter provided (which explicitly looks for `.md` files).
 
 Code in your pages can now be syntax highlighted using the power of Pygments.
 
@@ -65,3 +67,7 @@ To Matthias for his [initial plugin idea][initial], and his help getting it [fix
 
 [initial]: http://bloerg.net/2013/03/07/using-kramdown-instead-of-maruku.html
 [fix]: http://stackoverflow.com/q/18214424/359178
+
+## Contributors
+
+* [Randy Lai](https://github.com/randy3k) added GFM support.
